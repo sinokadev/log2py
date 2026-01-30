@@ -10,7 +10,7 @@ class Logger:
         self.save_log = True
         self.save_path = log_save_path
 
-    def custem(self, text):
+    def custom(self, text):
         self.now = datetime.datetime.now()
         self.log.append(f"{text}")
         print(self.log[len(self.log) - 1])
@@ -57,7 +57,7 @@ class Logger:
 
     def save(self):
         self.now = datetime.datetime.now()
-        os.chdir(os.getcw d())
+        os.chdir(os.getcwd())
         try:
             os.chdir(os.path.realpath(self.save_path))
             f = open(
@@ -77,6 +77,6 @@ class Logger:
             f.close()
         os.chdir(os.getcwd())
 
-    def __delattr__(self, name):
+    def __del__(self, name):
         if self.save_log:
             self.save()
