@@ -1,11 +1,9 @@
-# Simple Logging Library - log4py
-
-![img](logo.png)
+# Simple Logging Library - log2py
 
 ## Menual
 ### 1. Install
 ```bash
-$ wget https://raw.githubusercontent.com/newkincode/log4py/main/log4py.py
+$ pip install log2py
 ```
 ### 2. Import
 ```python
